@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  User_Id: MyString
+  Booking: false
+  Confirmed: false
+  Out_For_Delivery: false
+  Delivered: false
+  Order_Number: MyString
+  Code: MyString
+
+two:
+  User_Id: MyString
+  Booking: false
+  Confirmed: false
+  Out_For_Delivery: false
+  Delivered: false
+  Order_Number: MyString
+  Code: MyString
