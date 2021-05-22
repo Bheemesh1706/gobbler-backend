@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-    belongs_to :gas_agency
+    belongs_to :agency
     has_many :orders
 end

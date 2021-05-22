@@ -10,17 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_21_133950) do
+ActiveRecord::Schema.define(version: 2021_05_22_154150) do
 
-  create_table "deliveries", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "Ph_Number"
-    t.string "Gas_Agency"
-    t.string "Worker_Code"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "gas_agencies", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "agencies", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "Name"
     t.text "Address"
     t.string "City"
@@ -33,6 +25,14 @@ ActiveRecord::Schema.define(version: 2021_05_21_133950) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "deliveries", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "Ph_Number"
+    t.string "Gas_Agency"
+    t.string "Worker_Code"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "orders", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "User_Id"
     t.boolean "Booking"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2021_05_21_133950) do
     t.boolean "Out_For_Delivery"
     t.boolean "Delivered"
     t.string "Order_Number"
-    t.string "Code"
+    t.string "Worker_Code"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

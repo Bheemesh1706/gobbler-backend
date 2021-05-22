@@ -1,6 +1,6 @@
-class CreateGasAgencies < ActiveRecord::Migration[6.1]
+class CreateAgencies < ActiveRecord::Migration[6.1]
   def change
-    create_table :gas_agencies do |t|
+    create_table :agencies do |t|
       t.string :Name
       t.text :Address
       t.string :City

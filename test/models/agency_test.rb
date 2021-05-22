@@ -1,6 +1,6 @@
 require "test_helper"
 
-class GasAgencyTest < ActiveSupport::TestCase
+class AgencyTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
