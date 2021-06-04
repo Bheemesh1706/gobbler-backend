@@ -6,7 +6,7 @@ Rails.application.routes.draw do
         resources :orders
         resources :agencies
         resources :deliveries
-        get 'sendmessage', to: 'otps#SendMessage'
+        get 'sendotp', to: 'otps#SendOtp'
       end
   end
 

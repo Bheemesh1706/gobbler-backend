@@ -6,6 +6,7 @@ module Api::V1
         def create
             @agency = Agency.new(agency_params)
 
+
             if @agency.save
                 render json: {success_message: "User Created Sucessfully"}, status: 200
             else
@@ -40,7 +41,7 @@ module Api::V1
         private
 
             def agency_params
-                params.require(:agency).permit(:Name,:Address,:City,:Area,:Agency,:Stock,:Code,:password_digest)
+                params.require(:agency).permit(:Name,:Address,:City,:Area,:Agency,:Stock,:Code,:password)
             end
 
             def set_agency
