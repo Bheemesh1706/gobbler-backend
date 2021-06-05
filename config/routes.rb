@@ -7,6 +7,7 @@ Rails.application.routes.draw do
         resources :agencies
         resources :deliveries
         get 'sendotp', to: 'otps#SendOtp'
+        post 'login', to: 'sessions#create'
       end
   end
 
